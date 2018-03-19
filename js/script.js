@@ -1,5 +1,5 @@
 /* script.js 
-   Author:
+   Author: Stefani Urmas
    Date:
 */
 
