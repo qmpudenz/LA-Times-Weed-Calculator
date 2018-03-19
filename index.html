@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LA Times: THC Calculator</title>
+
+        <!-- your CSS stylesheet -->	
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+<body>
+
+<h1>Weed calculator</h1>
+    
+<h5 class="question">Select a cannabis product</h5>
+    
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for weed names..." title="Type in a name">
+
+<button id="cancel">Cancel</button>
+
+
+<ul id="myUL"></ul>
+    
+<h5 class="question">How much weed are you going to take?</h5>
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="4" step="0.1" value="1" class="slider" id="myRange">
+</div>
+
+<p><span id="demo"></span> grams</p>
+    
+<a href="#weed-info"><button id="calculate">Calculate THC intake</button></a>
+
+    
+<!-- Weed info box -->
+<div id="weed-info"></div>
+    
+
+<div class="infographic-container">
+    
+    <!-- THC infographic -->
+    <h5 class="question">Your THC intake</h5>
+    
+    <div id="intake-legend">
+        <div id="legend-orange"></div>
+        <span>Thc intake</span>
+        <div id="legend-gray"></div>
+        <span>Thc loss</span>
+        <span id="legend-max"></span>
+    </div>
+
+    <div id="intake-container">
+        <div id="intake-labels">
+            <div id="intake-smoke-label"><img src="img/smoke.svg"></div>
+            <div id="intake-vape-label"><img src="img/vape.svg"></div>
+            <div id="intake-eat-label"><img src="img/eat.svg"></div>
+        </div>
+
+        <div id="intake-bars">
+            <div id="intake-grid">
+                <div class="intake-grid-cell"></div>
+                <div class="intake-grid-cell"></div>
+                <div class="intake-grid-cell"></div>
+                <div class="intake-grid-cell"></div>
+                <div class="intake-grid-cell"></div>
+            </div>
+
+            <div id="intake-smoke-gray">
+                <div id="intake-smoke-orange"></div>
+            </div>
+            
+            <div id="intake-vape-gray">
+                <div id="intake-vape-orange"></div>
+            </div>
+            
+            <div id="intake-eat-gray">
+                <div id="intake-eat-orange"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="intake-scale-container">
+        <div id="intake-scale-numb1">mg</div>
+        <div id="intake-scale">
+            <div class="intake-scale-number" id="intake-scale-numb2"></div>
+            <div class="intake-scale-number" id="intake-scale-numb3"></div>
+            <div class="intake-scale-number" id="intake-scale-numb4"></div>
+            <div class="intake-scale-number" id="intake-scale-numb5"></div>
+            <div class="intake-scale-number" id="intake-scale-numb6"></div>
+        </div>
+    </div>
+    
+    <!-- Dosage infographic -->
+    <h5 class="question">Proper THC dosage</h5>
+    
+    <div id="dosage-legend">
+        <div id="dosage-legend-lightblue"></div>
+        <span>Too little</span>
+        <div id="dosage-legend-blue"></div>
+        <span>Proper amount</span>
+        <div id="dosage-legend-orange"></div>
+        <span>Too much</span>
+    </div>
+
+    <div id="dosage-container">
+        <div id="dosage-labels">
+            <div class="dosage-label">Beginner<span>Very low tolerance</span></div>
+            <div class="dosage-label">Some experience<span>Low tolerance</span></div>
+            <div class="dosage-label">Experienced<span>Medium tolerance</span></div>
+            <div class="dosage-label">More experience<span>High tolerance</span></div>
+        </div>
+
+        <div id="dosage-bars">
+            <div id="dosage-grid">
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+                <div class="dosage-grid-cell"></div>
+            </div>
+
+            <div id="dosage-beginner-orange">
+                <div id="dosage-beginner-blue"></div>
+                <div id="dosage-beginner-lightblue"></div>
+            </div>
+            
+            <div id="dosage-someexp-orange">
+                <div id="dosage-someexp-blue"></div>
+                <div id="dosage-someexp-lightblue"></div>
+            </div>
+            
+            <div id="dosage-exp-orange">
+                <div id="dosage-exp-blue"></div>
+                <div id="dosage-exp-lightblue"></div>
+            </div>
+            
+            <div id="dosage-moreexp-orange">
+                <div id="dosage-moreexp-blue"></div>
+                <div id="dosage-moreexp-lightblue"></div>
+            </div>
+            
+            <div id="dosage-amount-smoke"><span>Smoking</span></div>
+            <div id="dosage-amount-vape"><span>Vaping</span></div>
+            <div id="dosage-amount-eat"><span>Eating</span></div>
+            
+        </div>  
+    </div>
+    <div id="dosage-scale-container">
+        <div id="dosage-scale-numb1">mg</div>
+        <div id="dosage-scale">
+            <div class="dosage-scale-number">10</div>
+            <div class="dosage-scale-number">20</div>
+            <div class="dosage-scale-number">30</div>
+            <div class="dosage-scale-number">40</div>
+            <div class="dosage-scale-number">50</div>
+            <div class="dosage-scale-number">60</div>
+            <div class="dosage-scale-number">70</div>
+            <div class="dosage-scale-number">80</div>
+            <div class="dosage-scale-number">90</div>
+            <div class="dosage-scale-number">100</div>
+        </div>
+    </div>
+</div> 
+
+
+    <!-- JAVASCRIPT -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jqueryui.js"></script>
+        <script src="data/weed.json"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<!-- photos courtesy of Sarah Soutoul (copyright) -->
+<!-- soar.mp4 courtesy of Keith Plocek (copyright) -->

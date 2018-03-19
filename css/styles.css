@@ -1,0 +1,863 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    margin-bottom: 100px;
+}
+
+body {
+    margin: 4%;
+} 
+
+h5 {
+    position: relative;
+    font-size: 18px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    margin: 30px 0px 14px 0px;
+}
+
+#myInput {
+    background-image: url(../img/search.svg);
+    position: relative;
+    background-position: 12px 13px;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 48px;
+    font-size: 18px;
+    padding: 12px 20px 12px 48px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    color: #999;
+    float: left;
+    border-radius: 0px;
+}
+
+::placeholder {
+    opacity: 1;
+}
+
+button#cancel{
+    position: relative;
+    width: 25%;
+    height: 48px;
+    border: none;
+    font-size: 17px;
+    padding: 0px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+
+#myUL {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+#myUL li p {
+    height: 48px;
+    border: 1px solid #ddd;
+    margin: -1px 0px 0px 0px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px 12px 12px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+.strain {
+    float: right;
+    color: #ddd;
+}
+
+#myUL li p:hover:not(.header) {
+  background-color: #eee;
+}
+
+button#calculate{
+    position: relative;
+    width: auto;
+    height: 48px;
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 0px 20px;
+    border: none;
+    font-size: 17px;
+    background-color: #ddd;
+    color: #888;
+/*    box-shadow: 1px 1px 5px #999;*/
+}
+
+
+
+/* SLIDER */
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 15px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #FF5443;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FF5443;
+    cursor: pointer;
+}
+
+/* WEED INFO */
+
+#weed-info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.weed-info-name {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.weed-info-strain {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 7px;
+    background-color: #f4f4f4;
+}
+
+.weed-info-strain span{
+    float: right;
+}
+
+.weed-info-thc {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 7px;
+    background-color: white;
+}
+
+.weed-info-thc span{
+    float: right;
+}
+
+.weed-info-cbd {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 7px;
+    background-color: #f4f4f4;
+}
+
+.weed-info-cbd span{
+    float: right;
+}
+
+
+/* THC GRAPH */
+
+.infographic-container {
+    position: relative;
+    display: none;
+    margin: 35px auto;
+    width: 100%;
+    height: auto;
+}
+
+#intake-legend {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#intake-legend span {
+    display: block;
+    width: auto;
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#intake-legend span#legend-max {
+    position: absolute;
+    display: block;
+    right: 0px;
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#legend-orange {
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+    background: #FF5443; 
+}
+
+#legend-gray {
+    width: 13px;
+    height: 13px;
+    background: #ddd;
+    margin: 0px 6px 0px 20px;;
+}
+
+
+#intake-container {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+
+#intake-labels {
+    float: left;
+    width: 14%;
+    height: auto;
+    background-color: white;
+    color: white;
+}
+
+#intake-smoke-label {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#intake-vape-label {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#intake-eat-label {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#intake-bars {
+    position: relative;
+    float: left;
+    width: 86%;
+    height: auto;
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+#intake-grid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.intake-grid-cell {
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    
+}
+
+#intake-smoke-gray {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #ddd;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#intake-smoke-orange {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 50px;
+    background-color: #FF5443;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#intake-vape-gray {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #ddd;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#intake-vape-orange {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 50px;
+    background-color: #FF5443;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#intake-eat-gray {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #ddd;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#intake-eat-orange {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 50px;
+    background-color: #FF5443;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#intake-scale-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#intake-scale-numb1 {
+    width: 14%;
+    height: 30px;
+    float: left;
+    font-size: 11px;
+    text-align: right;
+}
+
+#intake-scale {
+    width: 86%;
+    height: auto;
+    float: left;
+}
+
+.intake-scale-number {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px;
+    font-size: 11px;
+    text-align: right;
+    margin-right: 0px;
+}
+
+/* DOSAGE GRAPH */
+
+
+#dosage-legend {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#dosage-legend span {
+    display: block;
+    width: auto;
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#dosage-legend-lightblue {
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+    background: #A2C8DC; 
+}
+
+#dosage-legend-blue {
+    width: 13px;
+    height: 13px;
+    background: #4591B8;
+    margin: 0px 6px 0px 20px;;
+}
+#dosage-legend-orange {
+    width: 13px;
+    height: 13px;
+    background: #FF5443;
+    margin: 0px 6px 0px 20px;;
+}
+
+#dosage-container {
+    width: 100%;
+    height: auto;
+    background-color: aqua; 
+}
+
+#dosage-labels {
+    float: left;
+    width: 25%;
+    height: auto;
+    background-color: white;
+    color: white;
+}
+
+.dosage-label {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px
+}
+
+.dosage-label span{
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+#dosage-bars {
+    position: relative;
+    float: left;
+    width: 75%;
+    height: auto;
+    border-left: 1px solid #ddd;
+}
+
+#dosage-grid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dosage-grid-cell {
+    width: 10%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    
+}
+
+#dosage-beginner-orange {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #FF5443;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#dosage-beginner-blue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5%;
+    height: 50px;
+    background-color: #4591B8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-beginner-lightblue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 50px;
+    background-color: #A2C8DC;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-someexp-orange {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #FF5443;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#dosage-someexp-blue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 50px;
+    background-color: #4591B8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-someexp-lightblue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5%;
+    height: 50px;
+    background-color: #A2C8DC;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-exp-orange {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #FF5443;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#dosage-exp-blue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 50px;
+    background-color: #4591B8;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-exp-lightblue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 50px;
+    background-color: #A2C8DC;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-moreexp-orange {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: #FF5443;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#dosage-moreexp-blue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    height: 50px;
+    background-color: #4591B8;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-moreexp-lightblue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 50px;
+    background-color: #A2C8DC;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+#dosage-amount-smoke {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 107%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 12px;
+    line-height: 8px;
+    margin-top: -30px
+}
+
+#dosage-amount-smoke span {
+    display: inline-block;
+    padding: 2px;
+    background-color: white;
+}
+
+#dosage-amount-vape {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 102%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 12px;
+    line-height: 8px;
+    margin-top: -15px
+}
+
+#dosage-amount-vape span {
+    display: inline-block;
+    padding: 2px;
+    background-color: white;
+}
+
+#dosage-amount-eat {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 97%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 12px;
+    line-height: 8px;
+    margin-top: -0px
+}
+
+#dosage-amount-eat span {
+    display: inline-block;
+    padding: 2px;
+    background-color: white;
+}
+
+#dosage-scale-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#dosage-scale-numb1 {
+    width: 25%;
+    height: 30px;
+    float: left;
+    font-size: 11px;
+    text-align: right;
+}
+
+#dosage-scale {
+    width: 75%;
+    height: auto;
+    float: left;
+}
+
+.dosage-scale-number {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px;
+    font-size: 11px;
+    text-align: right;
+    margin-right: 0px;
+}
+

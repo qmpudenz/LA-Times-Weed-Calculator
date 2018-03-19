@@ -1,0 +1,1492 @@
+﻿
+var weed = [
+  {
+    "name": "9 Pound Hammer",
+    "strain": "Hybrid",
+    "thc": "18.73",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Abusive OG",
+    "strain": "Hybrid",
+    "thc": "13.70",
+    "cbd": "0.04"
+  },
+  {
+    "name": "AC/DC",
+    "strain": "Sativa",
+    "thc": "5.40",
+    "cbd": "9.65"
+  },
+  {
+    "name": "ACDC",
+    "strain": "Sativa",
+    "thc": "3.85",
+    "cbd": "3.57"
+  },
+  {
+    "name": "Ace of Spades",
+    "strain": "Hybrid",
+    "thc": "16.85",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Afgoo",
+    "strain": "Indica",
+    "thc": "16.65",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Agent Orange",
+    "strain": "Hybrid",
+    "thc": "19.44",
+    "cbd": "0.17"
+  },
+  {
+    "name": "AK-47",
+    "strain": "Hybrid",
+    "thc": "17.12",
+    "cbd": "0.07"
+  },
+  {
+    "name": "AK47",
+    "strain": "Hybrid",
+    "thc": "13.85",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Albert Walker",
+    "strain": "Hybrid",
+    "thc": "23.39",
+    "cbd": "0.31"
+  },
+  {
+    "name": "Alien Kush",
+    "strain": "Hybrid",
+    "thc": "13.29",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Allen Wrench",
+    "strain": "Hybrid",
+    "thc": "18.79",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Amnesia Haze",
+    "strain": "Hybrid",
+    "thc": "17.57",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Animal Cookies",
+    "strain": "Hybrid",
+    "thc": "18.96",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Aurora",
+    "strain": "Hybrid",
+    "thc": "19.52",
+    "cbd": "0.38"
+  },
+  {
+    "name": "Banana Kush",
+    "strain": "Hybrid",
+    "thc": "19.02",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Banana OG",
+    "strain": "Hybrid",
+    "thc": "23.05",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Bay Dream",
+    "strain": "Hybrid",
+    "thc": "21.03",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Big Buddha Cheese",
+    "strain": "Hybrid",
+    "thc": "21.08",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Black Betty",
+    "strain": "Hybrid",
+    "thc": "21.84",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Black Cherry Soda",
+    "strain": "Hybrid",
+    "thc": "23.53",
+    "cbd": "0.25"
+  },
+  {
+    "name": "Black Diesel",
+    "strain": "Hybrid",
+    "thc": "17.10",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Black Jack",
+    "strain": "Hybrid",
+    "thc": "19.74",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Black Lime Reserve",
+    "strain": "Hybrid",
+    "thc": "11.85",
+    "cbd": "0.20"
+  },
+  {
+    "name": "Blackberry",
+    "strain": "Hybrid",
+    "thc": "19.14",
+    "cbd": "0.20"
+  },
+  {
+    "name": "Blackberry Kush",
+    "strain": "Hybrid",
+    "thc": "21.12",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Blackberry Pie",
+    "strain": "Hybrid",
+    "thc": "13.57",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Blood Wreck",
+    "strain": "Hybrid",
+    "thc": "18.81",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Blue Blood",
+    "strain": "Hybrid",
+    "thc": "18.13",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Blue Cheese",
+    "strain": "Hybrid",
+    "thc": "19.97",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Blue City Diesel",
+    "strain": "Hybrid",
+    "thc": "11.56",
+    "cbd": "0.30"
+  },
+  {
+    "name": "Blue Dream",
+    "strain": "Hybrid",
+    "thc": "10.76",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Blue Haze",
+    "strain": "Hybrid",
+    "thc": "20.26",
+    "cbd": "0.23"
+  },
+  {
+    "name": "Blue Jack",
+    "strain": "Hybrid",
+    "thc": "21.87",
+    "cbd": "0.18"
+  },
+  {
+    "name": "Blue Magoo",
+    "strain": "Hybrid",
+    "thc": "18.26",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Blue Ox",
+    "strain": "Hybrid",
+    "thc": "20.85",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Blue Rhino",
+    "strain": "Hybrid",
+    "thc": "16.32",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Blueberry",
+    "strain": "Hybrid",
+    "thc": "16.57",
+    "cbd": "0.07"
+  },
+  {
+    "name": "Blueberry Kush",
+    "strain": "Indica",
+    "thc": "24.73",
+    "cbd": "0.20"
+  },
+  {
+    "name": "Blueberry Pie",
+    "strain": "Hybrid",
+    "thc": "20.34",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Bruce Banner",
+    "strain": "Hybrid",
+    "thc": "20.72",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Bubba Kush",
+    "strain": "Hybrid",
+    "thc": "21.80",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Bubba Scout",
+    "strain": "Hybrid",
+    "thc": "19.36",
+    "cbd": "0.04"
+  },
+  {
+    "name": "Bubblicious",
+    "strain": "Hybrid",
+    "thc": "16.74",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Burmese Kush",
+    "strain": "Hybrid",
+    "thc": "16.20",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Cali Kush",
+    "strain": "Hybrid",
+    "thc": "26.17",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Candyland",
+    "strain": "Sativa",
+    "thc": "6.70",
+    "cbd": "0.06"
+  },
+  {
+    "name": "Canna-Tsu",
+    "strain": "Hybrid",
+    "thc": "5.34",
+    "cbd": "12.68"
+  },
+  {
+    "name": "Casey Jones",
+    "strain": "Hybrid",
+    "thc": "9.91",
+    "cbd": "0.06"
+  },
+  {
+    "name": "Cheese",
+    "strain": "Hybrid",
+    "thc": "13.66",
+    "cbd": "0.06"
+  },
+  {
+    "name": "Chemdawg",
+    "strain": "Hybrid",
+    "thc": "22.54",
+    "cbd": "0.20"
+  },
+  {
+    "name": "Chernobyl",
+    "strain": "Hybrid",
+    "thc": "68.04",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Cherry Kush",
+    "strain": "Organi",
+    "thc": "16.81",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Cherry Pie",
+    "strain": "Indica",
+    "thc": "16.67",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Chocolate",
+    "strain": "Hybrid",
+    "thc": "18.21",
+    "cbd": "0.26"
+  },
+  {
+    "name": "Chocolate Hashberry",
+    "strain": "Hybrid",
+    "thc": "19.05",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Chocolate Thai",
+    "strain": "Hybrid",
+    "thc": "15.49",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Chocolope",
+    "strain": "Sativa",
+    "thc": "20.75",
+    "cbd": "0.06"
+  },
+  {
+    "name": "Cinex",
+    "strain": "Hybrid",
+    "thc": "18.58",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Citrus Sap",
+    "strain": "Hybrid",
+    "thc": "22.03",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Clementine",
+    "strain": "Hybrid",
+    "thc": "27.40",
+    "cbd": "0.24"
+  },
+  {
+    "name": "Conquest",
+    "strain": "Hybrid",
+    "thc": "12.77",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Cookies",
+    "strain": "Hybrid",
+    "thc": "21.74",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Cookies & Cream",
+    "strain": "Hybrid",
+    "thc": "20.00",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Cornbread",
+    "strain": "Hybrid",
+    "thc": "18.92",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Cotton Candy",
+    "strain": "Hybrid",
+    "thc": "17.73",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Cotton Candy Kush",
+    "strain": "Hybrid",
+    "thc": "15.52",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Critical Jack",
+    "strain": "Hybrid",
+    "thc": "23.71",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Critical Kush",
+    "strain": "Indica",
+    "thc": "21.75",
+    "cbd": "0.46"
+  },
+  {
+    "name": "Critical Skunk",
+    "strain": "Hybrid",
+    "thc": "12.27",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Dairy Queen",
+    "strain": "Hybrid",
+    "thc": "15.29",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Dark Side of the Moon",
+    "strain": "Hybrid",
+    "thc": "20.76",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Deep Purple",
+    "strain": "Hybrid",
+    "thc": "14.90",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Dirty Girl",
+    "strain": "Hybrid",
+    "thc": "20.13",
+    "cbd": "0.17"
+  },
+  {
+    "name": "DJ Short Blueberry",
+    "strain": "Indica",
+    "thc": "20.23",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Dog Walker",
+    "strain": "Hybrid",
+    "thc": "20.99",
+    "cbd": "0.23"
+  },
+  {
+    "name": "Double Dream",
+    "strain": "Hybrid",
+    "thc": "20.67",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Double Purple",
+    "strain": "Hybrid",
+    "thc": "17.03",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Double Purple Doja",
+    "strain": "Hybrid",
+    "thc": "13.40",
+    "cbd": "0.06"
+  },
+  {
+    "name": "Dr. Who",
+    "strain": "Hybrid",
+    "thc": "18.11",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Dragon Lady",
+    "strain": "Hybrid",
+    "thc": "22.81",
+    "cbd": "0.35"
+  },
+  {
+    "name": "Durban",
+    "strain": "Hybrid",
+    "thc": "19.76",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Durban Poison",
+    "strain": "Sativa",
+    "thc": "18.89",
+    "cbd": "0.23"
+  },
+  {
+    "name": "Dutch Treat",
+    "strain": "Hybrid",
+    "thc": "22.05",
+    "cbd": "0.21"
+  },
+  {
+    "name": "East Coast Sour Diesel",
+    "strain": "Sativa",
+    "thc": "24.68",
+    "cbd": "0.20"
+  },
+  {
+    "name": "El Fuego",
+    "strain": "Hybrid",
+    "thc": "17.73",
+    "cbd": "0.08"
+  },
+  {
+    "name": "Epoxy OG",
+    "strain": "Hybrid",
+    "thc": "23.10",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Fat Purple",
+    "strain": "Hybrid",
+    "thc": "11.92",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Fire Alien Kush",
+    "strain": "Hybrid",
+    "thc": "15.72",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Florida Lemons",
+    "strain": "Hybrid",
+    "thc": "23.37",
+    "cbd": "0.26"
+  },
+  {
+    "name": "Flubber",
+    "strain": "Hybrid",
+    "thc": "18.07",
+    "cbd": "0.09"
+  },
+  {
+    "name": "Frankenberry",
+    "strain": "Hybrid",
+    "thc": "16.45",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Frankenstein",
+    "strain": "Hybrid",
+    "thc": "19.88",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Freezeland",
+    "strain": "Indica",
+    "thc": "15.68",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Fruit Punch",
+    "strain": "Hybrid",
+    "thc": "20.31",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Fruity Pebbles",
+    "strain": "Hybrid",
+    "thc": "24.75",
+    "cbd": "0.29"
+  },
+  {
+    "name": "Fruity Pebbles OG",
+    "strain": "Hybrid",
+    "thc": "21.97",
+    "cbd": "0.30"
+  },
+  {
+    "name": "Full Moon",
+    "strain": "Hybrid",
+    "thc": "16.72",
+    "cbd": "0.37"
+  },
+  {
+    "name": "G Force",
+    "strain": "Hybrid",
+    "thc": "14.77",
+    "cbd": "0.20"
+  },
+  {
+    "name": "Galactic Jack",
+    "strain": "Hybrid",
+    "thc": "21.38",
+    "cbd": "0.12"
+  },
+  {
+    "name": "GDP",
+    "strain": "Indica",
+    "thc": "22.53",
+    "cbd": "0.17"
+  },
+  {
+    "name": "GG #4",
+    "strain": "Indica",
+    "thc": "20.16",
+    "cbd": "0.26"
+  },
+  {
+    "name": "Ghost",
+    "strain": "Hybrid",
+    "thc": "25.79",
+    "cbd": "0.26"
+  },
+  {
+    "name": "Girl Scout Cookie",
+    "strain": "Hybrid",
+    "thc": "15.43",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Girl Scout Cookies",
+    "strain": "Hybrid",
+    "thc": "21.23",
+    "cbd": "0.13"
+  },
+  {
+    "name": "God Bud",
+    "strain": "Hybrid",
+    "thc": "11.31",
+    "cbd": "6.86"
+  },
+  {
+    "name": "Godberry",
+    "strain": "Indica",
+    "thc": "16.18",
+    "cbd": "0.34"
+  },
+  {
+    "name": "Golden Goat",
+    "strain": "Hybrid",
+    "thc": "22.28",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Gorilla Glue",
+    "strain": "Hybrid",
+    "thc": "68.76",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Gorilla Glue #4",
+    "strain": "Hybrid",
+    "thc": "20.63",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Grandaddy Purple",
+    "strain": "Indica",
+    "thc": "15.77",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Grape Ape",
+    "strain": "Hybrid",
+    "thc": "14.29",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Grape OG",
+    "strain": "Hybrid",
+    "thc": "24.06",
+    "cbd": "0.18"
+  },
+  {
+    "name": "Grape Romulan",
+    "strain": "Hybrid",
+    "thc": "12.85",
+    "cbd": "0.09"
+  },
+  {
+    "name": "Great White Shark",
+    "strain": "Sativa",
+    "thc": "13.89",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Green Crack",
+    "strain": "Hybrid",
+    "thc": "13.42",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Harle Tsu",
+    "strain": "Hybrid",
+    "thc": "0.54",
+    "cbd": "9.79"
+  },
+  {
+    "name": "Harlequin",
+    "strain": "Hybrid",
+    "thc": "4.67",
+    "cbd": "6.64"
+  },
+  {
+    "name": "Hawaiian",
+    "strain": "Hybrid",
+    "thc": "19.80",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Head Band",
+    "strain": "Hybrid",
+    "thc": "26.44",
+    "cbd": "0.08"
+  },
+  {
+    "name": "Headband",
+    "strain": "Hybrid",
+    "thc": "21.83",
+    "cbd": "0.09"
+  },
+  {
+    "name": "Heavy Duty Fruity",
+    "strain": "Hybrid",
+    "thc": "19.65",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Hindu Kush",
+    "strain": "Hybrid",
+    "thc": "18.14",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Holy Grail Kush",
+    "strain": "Hybrid",
+    "thc": "25.42",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Honey Boo Boo",
+    "strain": "Indica",
+    "thc": "15.22",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Humboldt Honey",
+    "strain": "Hybrid",
+    "thc": "21.59",
+    "cbd": "0.18"
+  },
+  {
+    "name": "Intimidator OG",
+    "strain": "Hybrid",
+    "thc": "18.63",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Jack",
+    "strain": "Hybrid",
+    "thc": "22.46",
+    "cbd": "0.07"
+  },
+  {
+    "name": "Jack Herer",
+    "strain": "Hybrid",
+    "thc": "18.14",
+    "cbd": "0.07"
+  },
+  {
+    "name": "Jack Skellington",
+    "strain": "Hybrid",
+    "thc": "15.14",
+    "cbd": "0.09"
+  },
+  {
+    "name": "Jack the Ripper",
+    "strain": "Hybrid",
+    "thc": "19.32",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Jackpot",
+    "strain": "Hybrid",
+    "thc": "18.41",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Jamaican Dream",
+    "strain": "Hybrid",
+    "thc": "18.41",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Jilly Bean",
+    "strain": "Hybrid",
+    "thc": "20.63",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Juicy Fruit",
+    "strain": "Hybrid",
+    "thc": "18.62",
+    "cbd": "0.07"
+  },
+  {
+    "name": "Kimbo Kush",
+    "strain": "Hybrid",
+    "thc": "16.49",
+    "cbd": "0.07"
+  },
+  {
+    "name": "King Kong",
+    "strain": "Hybrid",
+    "thc": "20.83",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Kosher Kush",
+    "strain": "Hybrid",
+    "thc": "25.20",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Kryptonite",
+    "strain": "Hybrid",
+    "thc": "7.81",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Kush Dream",
+    "strain": "Hybrid",
+    "thc": "21.84",
+    "cbd": "0.17"
+  },
+  {
+    "name": "LA Cheese",
+    "strain": "Hybrid",
+    "thc": "21.50",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Lavender",
+    "strain": "Indica",
+    "thc": "20.55",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Lavender OG",
+    "strain": "Hybrid",
+    "thc": "13.14",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Lemon OG",
+    "strain": "Hybrid",
+    "thc": "23.28",
+    "cbd": "0.23"
+  },
+  {
+    "name": "Lemon Skunk",
+    "strain": "Hybrid",
+    "thc": "22.24",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Locktite",
+    "strain": "Hybrid",
+    "thc": "22.27",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Lodi Dodi",
+    "strain": "Hybrid",
+    "thc": "20.70",
+    "cbd": "0.27"
+  },
+  {
+    "name": "Love Triangle",
+    "strain": "Hybrid",
+    "thc": "26.68",
+    "cbd": "0.32"
+  },
+  {
+    "name": "Mango",
+    "strain": "Hybrid",
+    "thc": "17.49",
+    "cbd": "0.52"
+  },
+  {
+    "name": "Mango Haze",
+    "strain": "Hybrid",
+    "thc": "16.55",
+    "cbd": "0.18"
+  },
+  {
+    "name": "Marionberry Kush",
+    "strain": "Hybrid",
+    "thc": "20.07",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Master Kush",
+    "strain": "Hybrid",
+    "thc": "14.87",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Matanuska Thunder Fuck",
+    "strain": "Sativa",
+    "thc": "14.88",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Maui Waui",
+    "strain": "Sativa",
+    "thc": "12.92",
+    "cbd": "0.33"
+  },
+  {
+    "name": "Mendo Breath",
+    "strain": "Hybrid",
+    "thc": "21.06",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Mendocino",
+    "strain": "Hybrid",
+    "thc": "15.55",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Mindscape",
+    "strain": "Hybrid",
+    "thc": "18.38",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Mint Chocolate Chip",
+    "strain": "Hybrid",
+    "thc": "16.99",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Monster",
+    "strain": "Hybrid",
+    "thc": "24.38",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Northern Lights",
+    "strain": "Hybrid",
+    "thc": "19.41",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Northern Lights #5",
+    "strain": "Hybrid",
+    "thc": "21.03",
+    "cbd": "0.18"
+  },
+  {
+    "name": "Nurse Jackie",
+    "strain": "Hybrid",
+    "thc": "23.41",
+    "cbd": "0.13"
+  },
+  {
+    "name": "NYPD",
+    "strain": "Sativa",
+    "thc": "13.23",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Obama Kush",
+    "strain": "Hybrid",
+    "thc": "15.03",
+    "cbd": "0.08"
+  },
+  {
+    "name": "OG Kush",
+    "strain": "Hybrid",
+    "thc": "17.05",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Ogre",
+    "strain": "Hybrid",
+    "thc": "8.35",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Optimus Prime",
+    "strain": "Hybrid",
+    "thc": "13.21",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Orange Dream",
+    "strain": "Hybrid",
+    "thc": "20.29",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Orange Kush",
+    "strain": "Hybrid",
+    "thc": "21.18",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Papaya",
+    "strain": "Hybrid",
+    "thc": "16.22",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Permafrost",
+    "strain": "Hybrid",
+    "thc": "15.77",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Pineapple",
+    "strain": "Hybrid",
+    "thc": "24.26",
+    "cbd": "0.24"
+  },
+  {
+    "name": "Pineapple Chunk",
+    "strain": "Hybrid",
+    "thc": "13.73",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Pineapple Express",
+    "strain": "Hybrid",
+    "thc": "21.36",
+    "cbd": "0.18"
+  },
+  {
+    "name": "Pineapple Kush",
+    "strain": "Hybrid",
+    "thc": "18.99",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Pink Lemonade",
+    "strain": "Hybrid",
+    "thc": "19.77",
+    "cbd": "0.21"
+  },
+  {
+    "name": "PK",
+    "strain": "",
+    "thc": "1.69",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Platinum Kush",
+    "strain": "Hybrid",
+    "thc": "16.57",
+    "cbd": "0.24"
+  },
+  {
+    "name": "Plushberry",
+    "strain": "Hybrid",
+    "thc": "18.08",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Pre 98 Bubba Kush",
+    "strain": "Hybrid",
+    "thc": "18.46",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Pre-98 Bubba Kush",
+    "strain": "Indica",
+    "thc": "20.89",
+    "cbd": "0.31"
+  },
+  {
+    "name": "Predator Pink",
+    "strain": "Hybrid",
+    "thc": "17.54",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Purple Arrow",
+    "strain": "Hybrid",
+    "thc": "16.63",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Purple Chemdawg",
+    "strain": "Indica",
+    "thc": "22.45",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Purple Elephant",
+    "strain": "Hybrid",
+    "thc": "8.51",
+    "cbd": "0.05"
+  },
+  {
+    "name": "Purple Glue",
+    "strain": "Hybrid",
+    "thc": "23.16",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Purple Haze",
+    "strain": "Hybrid",
+    "thc": "15.10",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Purple Jolly Rancher",
+    "strain": "Hybrid",
+    "thc": "14.45",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Purple Kush",
+    "strain": "Hybrid",
+    "thc": "20.86",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Purple Nepal",
+    "strain": "Hybrid",
+    "thc": "17.02",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Purple OG Kush",
+    "strain": "Indica",
+    "thc": "22.68",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Purple Punch",
+    "strain": "Hybrid",
+    "thc": "17.88",
+    "cbd": "0.04"
+  },
+  {
+    "name": "Purple Urkle",
+    "strain": "Hybrid",
+    "thc": "4.17",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Qrazy Train",
+    "strain": "Hybrid",
+    "thc": "26.65",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Querkle",
+    "strain": "Hybrid",
+    "thc": "18.89",
+    "cbd": "0.16"
+  },
+  {
+    "name": "Race Fuel",
+    "strain": "Hybrid",
+    "thc": "21.49",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Remedy",
+    "strain": "Indica",
+    "thc": "0.87",
+    "cbd": "14.92"
+  },
+  {
+    "name": "Sapphire Star",
+    "strain": "Hybrid",
+    "thc": "21.90",
+    "cbd": "0.09"
+  },
+  {
+    "name": "Sensi Star",
+    "strain": "Hybrid",
+    "thc": "20.19",
+    "cbd": "0.24"
+  },
+  {
+    "name": "SFV OG Kush",
+    "strain": "Indica",
+    "thc": "13.35",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Sherbert",
+    "strain": "Hybrid",
+    "thc": "17.80",
+    "cbd": "0.10"
+  },
+  {
+    "name": "Shiva Skunk",
+    "strain": "Hybrid",
+    "thc": "19.69",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Silvertip",
+    "strain": "Hybrid",
+    "thc": "22.58",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Snow Leopard",
+    "strain": "Hybrid",
+    "thc": "20.38",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Snow Monster",
+    "strain": "Indica",
+    "thc": "20.74",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Sour Blueberry",
+    "strain": "Hybrid",
+    "thc": "18.56",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Sour Diesel",
+    "strain": "Hybrid",
+    "thc": "20.89",
+    "cbd": "0.26"
+  },
+  {
+    "name": "Sour Kosher",
+    "strain": "Hybrid",
+    "thc": "19.63",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Sour Pez",
+    "strain": "Hybrid",
+    "thc": "17.13",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Sour Tsunami",
+    "strain": "Hybrid",
+    "thc": "1.04",
+    "cbd": "11.77"
+  },
+  {
+    "name": "Space Bomb",
+    "strain": "Hybrid",
+    "thc": "14.89",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Space Candy",
+    "strain": "Hybrid",
+    "thc": "18.84",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Space Queen",
+    "strain": "Hybrid",
+    "thc": "17.92",
+    "cbd": "0.13"
+  },
+  {
+    "name": "Starfighter",
+    "strain": "Hybrid",
+    "thc": "18.90",
+    "cbd": "0.17"
+  },
+  {
+    "name": "Stephen Hawking Kush",
+    "strain": "Hybrid",
+    "thc": "0.89",
+    "cbd": "13.65"
+  },
+  {
+    "name": "Stone Free",
+    "strain": "Hybrid",
+    "thc": "15.25",
+    "cbd": "0.08"
+  },
+  {
+    "name": "Strawberry Banana Kush",
+    "strain": "Hybrid",
+    "thc": "17.38",
+    "cbd": "0.14"
+  },
+  {
+    "name": "Strawberry Cough",
+    "strain": "Hybrid",
+    "thc": "10.47",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Strawberry Diesel",
+    "strain": "Hybrid",
+    "thc": "12.33",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Sugar Black Rose",
+    "strain": "Hybrid",
+    "thc": "17.38",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Sugar Plum",
+    "strain": "Hybrid",
+    "thc": "9.32",
+    "cbd": "0.01"
+  },
+  {
+    "name": "Super Lemon Haze",
+    "strain": "Hybrid",
+    "thc": "19.08",
+    "cbd": "0.29"
+  },
+  {
+    "name": "Super Silver Haze",
+    "strain": "Sativa",
+    "thc": "19.50",
+    "cbd": "0.08"
+  },
+  {
+    "name": "Sweet Black Angel",
+    "strain": "Hybrid",
+    "thc": "14.64",
+    "cbd": "0.21"
+  },
+  {
+    "name": "Taffie",
+    "strain": "Hybrid",
+    "thc": "19.58",
+    "cbd": "0.03"
+  },
+  {
+    "name": "Tahoe OG",
+    "strain": "Hybrid",
+    "thc": "13.16",
+    "cbd": "0.04"
+  },
+  {
+    "name": "Tangerine",
+    "strain": "Hybrid",
+    "thc": "17.25",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Tangerine Cookies",
+    "strain": "Hybrid",
+    "thc": "26.12",
+    "cbd": "0.08"
+  },
+  {
+    "name": "Tangerine Dream",
+    "strain": "Hybrid",
+    "thc": "15.77",
+    "cbd": "0.11"
+  },
+  {
+    "name": "Tangerine Power",
+    "strain": "Hybrid",
+    "thc": "19.17",
+    "cbd": "0.15"
+  },
+  {
+    "name": "Tangilope",
+    "strain": "Hybrid",
+    "thc": "14.36",
+    "cbd": "0.03"
+  },
+  {
+    "name": "The White",
+    "strain": "Hybrid",
+    "thc": "27.67",
+    "cbd": "0.23"
+  },
+  {
+    "name": "Thin Mint",
+    "strain": "Hybrid",
+    "thc": "20.79",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Trainwreck",
+    "strain": "Hybrid",
+    "thc": "14.16",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Triangle Kush",
+    "strain": "Indica",
+    "thc": "18.66",
+    "cbd": "0.19"
+  },
+  {
+    "name": "Trinity",
+    "strain": "Hybrid",
+    "thc": "17.33",
+    "cbd": "0.12"
+  },
+  {
+    "name": "Tutankhamon",
+    "strain": "Sativa",
+    "thc": "16.71",
+    "cbd": "0.01"
+  },
+  {
+    "name": "UK Cheese",
+    "strain": "Hybrid",
+    "thc": "12.94",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Vietnamese Black",
+    "strain": "Hybrid",
+    "thc": "14.59",
+    "cbd": "0.15"
+  },
+  {
+    "name": "White Alien",
+    "strain": "Hybrid",
+    "thc": "15.05",
+    "cbd": "0.15"
+  },
+  {
+    "name": "White Rhino",
+    "strain": "Hybrid",
+    "thc": "17.14",
+    "cbd": "0.13"
+  },
+  {
+    "name": "White Russian",
+    "strain": "Hybrid",
+    "thc": "19.77",
+    "cbd": "0.19"
+  },
+  {
+    "name": "White Skunk",
+    "strain": "Hybrid",
+    "thc": "18.84",
+    "cbd": "0.19"
+  },
+  {
+    "name": "White Star",
+    "strain": "Hybrid",
+    "thc": "25.23",
+    "cbd": "0.22"
+  },
+  {
+    "name": "White Urkle",
+    "strain": "Hybrid",
+    "thc": "22.85",
+    "cbd": "0.09"
+  },
+  {
+    "name": "White Widow",
+    "strain": "Hybrid",
+    "thc": "23.88",
+    "cbd": "0.26"
+  },
+  {
+    "name": "XJ-13",
+    "strain": "Hybrid",
+    "thc": "21.01",
+    "cbd": "0.22"
+  },
+  {
+    "name": "Yeti OG",
+    "strain": "Hybrid",
+    "thc": "21.19",
+    "cbd": "0.13"
+  }
+   
+];
