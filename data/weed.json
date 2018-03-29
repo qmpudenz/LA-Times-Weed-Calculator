@@ -14,15 +14,9 @@ var weed = [
   },
   {
     "name": "AC/DC",
-    "strain": "Sativa",
-    "thc": "5.40",
-    "cbd": "9.65"
-  },
-  {
-    "name": "ACDC",
-    "strain": "Sativa",
-    "thc": "3.85",
-    "cbd": "3.57"
+    "strain": "Hybrid",
+    "thc": "1.00",
+    "cbd": "20.00"
   },
   {
     "name": "Ace of Spades",
@@ -47,12 +41,6 @@ var weed = [
     "strain": "Hybrid",
     "thc": "17.12",
     "cbd": "0.07"
-  },
-  {
-    "name": "AK47",
-    "strain": "Hybrid",
-    "thc": "13.85",
-    "cbd": "0.14"
   },
   {
     "name": "Albert Walker",
@@ -89,12 +77,6 @@ var weed = [
     "strain": "Hybrid",
     "thc": "19.52",
     "cbd": "0.38"
-  },
-  {
-    "name": "Banana Kush",
-    "strain": "Hybrid",
-    "thc": "19.02",
-    "cbd": "0.14"
   },
   {
     "name": "Banana OG",
@@ -309,8 +291,8 @@ var weed = [
   {
     "name": "Chernobyl",
     "strain": "Hybrid",
-    "thc": "68.04",
-    "cbd": "0.01"
+    "thc": "13.86",
+    "cbd": "0.02"
   },
   {
     "name": "Cherry Kush",
@@ -619,12 +601,6 @@ var weed = [
     "cbd": "0.26"
   },
   {
-    "name": "Girl Scout Cookie",
-    "strain": "Hybrid",
-    "thc": "15.43",
-    "cbd": "0.05"
-  },
-  {
     "name": "Girl Scout Cookies",
     "strain": "Hybrid",
     "thc": "21.23",
@@ -651,8 +627,8 @@ var weed = [
   {
     "name": "Gorilla Glue",
     "strain": "Hybrid",
-    "thc": "68.76",
-    "cbd": "0.01"
+    "thc": "14.77",
+    "cbd": "0.16"
   },
   {
     "name": "Gorilla Glue #4",
@@ -755,12 +731,6 @@ var weed = [
     "strain": "Hybrid",
     "thc": "21.59",
     "cbd": "0.18"
-  },
-  {
-    "name": "Intimidator OG",
-    "strain": "Hybrid",
-    "thc": "18.63",
-    "cbd": "0.17"
   },
   {
     "name": "Jack",
@@ -1057,28 +1027,10 @@ var weed = [
     "cbd": "0.21"
   },
   {
-    "name": "PK",
-    "strain": "",
-    "thc": "1.69",
-    "cbd": "0.01"
-  },
-  {
     "name": "Platinum Kush",
     "strain": "Hybrid",
     "thc": "16.57",
     "cbd": "0.24"
-  },
-  {
-    "name": "Plushberry",
-    "strain": "Hybrid",
-    "thc": "18.08",
-    "cbd": "0.16"
-  },
-  {
-    "name": "Pre 98 Bubba Kush",
-    "strain": "Hybrid",
-    "thc": "18.46",
-    "cbd": "0.12"
   },
   {
     "name": "Pre-98 Bubba Kush",
@@ -1127,12 +1079,6 @@ var weed = [
     "strain": "Hybrid",
     "thc": "14.45",
     "cbd": "0.14"
-  },
-  {
-    "name": "Purple Kush",
-    "strain": "Hybrid",
-    "thc": "20.86",
-    "cbd": "0.13"
   },
   {
     "name": "Purple Nepal",
@@ -1259,12 +1205,6 @@ var weed = [
     "strain": "Hybrid",
     "thc": "1.04",
     "cbd": "11.77"
-  },
-  {
-    "name": "Space Bomb",
-    "strain": "Hybrid",
-    "thc": "14.89",
-    "cbd": "0.11"
   },
   {
     "name": "Space Candy",
@@ -1447,12 +1387,6 @@ var weed = [
     "cbd": "0.13"
   },
   {
-    "name": "White Russian",
-    "strain": "Hybrid",
-    "thc": "19.77",
-    "cbd": "0.19"
-  },
-  {
     "name": "White Skunk",
     "strain": "Hybrid",
     "thc": "18.84",
@@ -1487,6 +1421,5 @@ var weed = [
     "strain": "Hybrid",
     "thc": "21.19",
     "cbd": "0.13"
-  }
-   
+  } 
 ];
