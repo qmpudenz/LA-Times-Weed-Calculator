@@ -68,11 +68,12 @@ function smokesCalculator() {
 
     $("#myInput").val(weed[selected].name);
 
-    $("#myInput").css({"color":"#FF5443","font-weight":"700"});
-
+    $("#myInput").css({"color":"#FF5443","font-family":"Benton Gothic Bold", "font-size":"18px"});
+    $(".input-container").css({"margin-bottom":"10px"});
+    
     $("#calculate").css({"background-color":"#FF5443","color":"white","cursor":"pointer"});
 
-    $("#weed-info").html('<div class="weed-info-name">'+ weed[selected].name +'</div><div class="weed-info-strain">Strain<span>'+ weed[selected].strain +'</span></div><div class="weed-info-thc">THC<span>'+ weed[selected].thc +' %</span></div><div class="weed-info-cbd">CBD<span>'+ weed[selected].cbd +' %</span></div>')
+    $("#weed-info").html('</div><div class="weed-info-strain">Strain<span>'+ weed[selected].strain +'</span></div><div class="weed-info-thc">THC<span>'+ weed[selected].thc +' %</span></div><div class="weed-info-cbd">CBD<span>'+ weed[selected].cbd +' %</span></div>')
 
     var weedAmount = slider.value * 1000; // convert to milligrams
     var thcMaxAmount = parseInt((weedAmount * weed[selected].thc)/100);
