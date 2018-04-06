@@ -6,9 +6,10 @@
 
 // GLOBAL VARIABLES
 
-var selected
+var selectedWeed
+var selectedEdible
 
-// SEARCH BAR FUNCTION (Filtering search results)
+// SMOKES (interactive 1): SEARCH BAR FUNCTION (Filtering search results)
 
 function searchbarFilter() {
     var input, filter, ul, li, a, i;
@@ -27,7 +28,26 @@ function searchbarFilter() {
     }
 }
 
-// LOOP FOR THE WEED LIST
+// EDIBLES (interactive 2): SEARCH BAR FUNCTION (Filtering search results)
+
+//function searchbarFilter() {
+//    var input, filter, ul, li, a, i;
+//    input = document.getElementById("myInput-edibles");
+//    filter = input.value.toUpperCase();
+//    ul = document.getElementById("myUL-edibles");
+//    li = ul.getElementsByTagName("li");
+//    
+//    for (i = 0; i < li.length; i++) {
+//        a = li[i].getElementsByTagName("p")[0];
+//        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+//            li[i].style.display = "block";
+//        } else {
+//            li[i].style.display = "none";
+//        }
+//    }
+//}
+
+// LOOP FOR THE SMOKES/WEED LIST
 
 var leng = weed.length;
 
@@ -36,14 +56,33 @@ for (i = 0; i < leng; i++) {
     $("#myUL").append('<li><p class="weed-name" data-id="'+ i +'">'+ weed[i].name +' <span class="strain">'+ weed[i].strain +'</span></p></li>')
 }
 
-// BUTTON FUNCTIONS
+// LOOP FOR THE EDIBLES LIST
 
-function buttonOff() {
-    $("#cancel").css({"background-color":"#ddd","color":"#111","border":"1px","cursor":"default"});
+var leng = edibles.length;
+
+for (i = 0; i < leng; i++) {
+
+    $("#myUL-edibles").append('<li><p class="edible-name" data-id="'+ i +'">'+ edibles[i].product +' <span class="edibles-specs">'+ edibles[i].americanServing +'</span></p></li>')
 }
 
-function buttonOn() {
-    $("#cancel").css({"background-color":"#FF5443","color":"white","border":"0px","cursor":"pointer"});
+// BUTTON FUNCTIONS, SMOKES
+
+function button1Off() {
+    $("#cancel1").css({"background-color":"#ddd","color":"#111","border":"1px","cursor":"default"});
+}
+
+function button1On() {
+    $("#cancel1").css({"background-color":"#FF5443","color":"white","border":"0px","cursor":"pointer"});
+}
+
+// BUTTON FUNCTIONS, EDIBLES
+
+function button2Off() {
+    $("#cancel2").css({"background-color":"#ddd","color":"#111","border":"1px","cursor":"default"});
+}
+
+function button2On() {
+    $("#cancel2").css({"background-color":"#FF5443","color":"white","border":"0px","cursor":"pointer"});
 }
 
 // SMOKES SLIDER
@@ -62,25 +101,25 @@ function smokesCalculator() {
 
     $("#myUL").css({"display":"none"});
 
-    buttonOff();
+    button1Off();
 
-    $("#myInput").attr("placeholder", weed[selected].name);
+    $("#myInput").attr("placeholder", weed[selectedWeed].name);
 
-    $("#myInput").val(weed[selected].name);
+    $("#myInput").val(weed[selectedWeed].name);
 
     $("#myInput").css({"color":"#FF5443","font-family":"Benton Gothic Bold", "font-size":"18px"});
     $(".input-container").css({"margin-bottom":"10px"});
     
     $("#calculate").css({"background-color":"#FF5443","color":"white","cursor":"pointer"});
 
-    $("#weed-info").html('</div><div class="weed-info-strain">Strain<span>'+ weed[selected].strain +'</span></div><div class="weed-info-thc">THC<span>'+ weed[selected].thc +' %</span></div><div class="weed-info-cbd">CBD<span>'+ weed[selected].cbd +' %</span></div>')
+    $("#weed-info").html('</div><div class="weed-info-strain">Strain<span>'+ weed[selectedWeed].strain +'</span></div><div class="weed-info-thc">THC<span>'+ weed[selectedWeed].thc +' %</span></div><div class="weed-info-cbd">CBD<span>'+ weed[selectedWeed].cbd +' %</span></div>')
 
     var weedAmount = slider.value * 1000; // convert to milligrams
-    var thcMaxAmount = parseInt((weedAmount * weed[selected].thc)/100);
+    var thcMaxAmount = parseInt((weedAmount * weed[selectedWeed].thc)/100);
 
     $("#intake-container").css({"display":"block"});
 
-    var smokeIntake = parseInt(thcMaxAmount * 0.38); // 38% efficiency for joints
+    var smokeIntake = parseInt(thcMaxAmount * 0.38); // 37% efficiency for joints
     var vapeIntake = parseInt(thcMaxAmount * 0.54); // 54% efficiency for vapes
     var bongIntake = parseInt(thcMaxAmount * 0.40); // 40% efficiency for bongs
 
@@ -126,7 +165,6 @@ function smokesCalculator() {
 
 // EDIBLE SLIDERS
 
-// amount
 var amountSlider = document.getElementById("amount-range");
 var amountOutput = document.getElementById("edibles-amount");
 amountOutput.innerHTML = amountSlider.value;
@@ -135,66 +173,62 @@ amountSlider.oninput = function() {
 amountOutput.innerHTML = this.value;
 }
 
-// strength
-var strengthSlider = document.getElementById("strength-range");
-var strengthOutput = document.getElementById("edibles-strength");
-strengthOutput.innerHTML = strengthSlider.value;
-
-strengthSlider.oninput = function() {
-strengthOutput.innerHTML = this.value;
-}
-
-// portions
-var portionsSlider = document.getElementById("portions-range");
-var portionsOutput = document.getElementById("edibles-portions");
-portionsOutput.innerHTML = portionsSlider.value;
-
-portionsSlider.oninput = function() {
-portionsOutput.innerHTML = this.value;
-}
-
 
 // EDIBLES CALCULATING FUNCTION
     
 function ediblesCalculator() {
       
-    var ediblesTHC = parseInt((amountSlider.value) * (strengthSlider.value/100) / (portionsSlider.value) * 1000); // convert to milligrams
+    $("#myUL-edibles").css({"display":"none"});
 
-    var ediblesTHCintake = parseInt(ediblesTHC * 0.6); // 60% efficiency for edibles
+    button2Off();
 
-    var ediblesLoss = parseInt(ediblesTHC - ediblesTHCintake);
+    $("#myInput-edibles").attr("placeholder", edibles[selectedEdible].product);
 
-    var ediblesBar = parseInt((ediblesTHCintake*100)/ediblesTHC);
+    $("#myInput-edibles").val(edibles[selectedEdible].product);
 
-    $("#edible-infographic-container").css({"display":"block"});
+    $("#myInput-edibles").css({"color":"#FF5443","font-family":"Benton Gothic Bold", "font-size":"18px"});
+    $(".input-container").css({"margin-bottom":"10px"});
+    
+    $("#calculate2").css({"background-color":"#FF5443","color":"white","cursor":"pointer"});
 
-    $("#edibles-intake-gray").html('<div id="edibles-intake-orange"></div>');
+    $("#edibles-info").html('</div><div class="weed-info-strain">Weight per unit/item<span>'+ edibles[selectedEdible].servingSize +' '+ edibles[selectedEdible].servingSizeUnits +'</span></div><div class="weed-info-thc">THC per unit/item<span>'+ edibles[selectedEdible].thcTotal +' mg</span></div><div class="weed-info-cbd">Suggested dosage:<span>'+ edibles[selectedEdible].suggestedDosage +'</span></div>')
 
-    $("#edibles-intake-orange").animate({"width": ediblesBar + '%'},800);
+    var ediblesTHC = parseInt((amountSlider.value)*(edibles[selectedEdible].thcTotal));
 
-    $("#edibles-intake-gray").append(ediblesLoss + ' mg');
-
-    $("#edibles-intake-orange").html(ediblesTHCintake + ' mg');
-
-    $("#edibles-legend-max").html('THC max: '+ ediblesTHC +' mg');
-
-    $("#dosage-amount-edibles").animate({"width": ediblesTHCintake + '%'},800);
+    $("#edibles-selection-container").css({"display":"block"});
+    
+    $("#dosage-amount-edibles").animate({"width": ediblesTHC + '%'},800);
 
     $("#edibles-scale-numb2").html(parseInt(ediblesTHC * 0.2)); // x-axis ticks
     $("#edibles-scale-numb3").html(parseInt(ediblesTHC * 0.4));
     $("#edibles-scale-numb4").html(parseInt(ediblesTHC * 0.6));
     $("#edibles-scale-numb5").html(parseInt(ediblesTHC * 0.8));
     $("#edibles-scale-numb6").html(parseInt(ediblesTHC * 1));
-
+    
+    $("#dosage-amount-edibles").html('<span>'+ edibles[selectedEdible].product +'</span>');
+    
+//    $("#edibles-amount").html('<span>'+ dibles[selectedEdible].suggestedValue +'</span>');
+    $("#edibles-value-grams").html('<span>'+ edibles[selectedEdible].unit +'</span>');
+    
+    $("#amount-range").attr('max', ''+ edibles[selectedEdible].maxValue +'');
+    $("#amount-range").attr('step', ''+ edibles[selectedEdible].step +'');
+    $("#amount-range").attr('value', ''+ edibles[selectedEdible].suggestedValue +'');
+    
+    $("#edibles-slider").css({"display":"block"});
+    
+//    console.log(amountSlider.value);
 }
 
 // ***************************//
 
 $(document).ready(function(){ // begin document.ready block
     
+    
+
+    
     // SMOOTH AUTO SCROLL
      
-    // for smokes
+    // for smokes, interactive 1
 	$(".weed-name").on({
         
         click: function(){
@@ -208,36 +242,69 @@ $(document).ready(function(){ // begin document.ready block
         }
     });
     
+    // for edibles, interactive 2
+//	$(".edible-name").on({
+//        
+//        click: function(){
+//
+//            var scrolly = $("#scrollTarget2").offset().top;
+//            console.log('scrolly');
+//            
+//            $("html, body").animate({
+//                scrollTop: $("#scrollTarget2").offset().top                
+//            }, 500);
+//        }
+//    });
+    
     // for edibles
-    $("#amount-range, #strength-range, #portions-range").on({
-        
-        click: function(){
-
-            var scrolly = $("#scrollTarget2").offset().top;
-            console.log('scrolly');
-            
-            $("html, body").animate({
-                scrollTop: $("#scrollTarget2").offset().top                
-            }, 500);
-        }
-    });
+//    $("#amount-range, #strength-range, #portions-range").on({
+//        
+//        click: function(){
+//
+//            var scrolly = $("#scrollTarget2").offset().top;
+//            console.log('scrolly');
+//            
+//            $("html, body").animate({
+//                scrollTop: $("#scrollTarget2").offset().top                
+//            }, 500);
+//        }
+//    });
     
     // SEARCH SMOKES
     
     $("#myInput").click(function(){
         
         $("#myUL").css({"display":"block"});
-        buttonOn();
+        button1On();
         
     });
     
-    // CANCEL BUTTON
+    // SEARCH EDIBLES
     
-    $("#cancel").click(function(){
+    $("#myInput-edibles").click(function(){
+        
+        $("#myUL-edibles").css({"display":"block"});
+        button2On();
+        
+    });
+    
+    // CANCEL BUTTON, SMOKES
+    
+    $("#cancel1").click(function(){
         
         $("#myUL").css({"display":"none"});
         $("#myInput").html('');
-        buttonOff();
+        button1Off();
+        
+    });
+    
+    // CANCEL BUTTON, EDIBLES
+    
+    $("#cancel2").click(function(){
+        
+        $("#myUL-edibles").css({"display":"none"});
+        $("#myInput-edibles").html('');
+        button2Off();
         
     });
     
@@ -246,7 +313,7 @@ $(document).ready(function(){ // begin document.ready block
     // menu item
     $(".weed-name").click(function(){
         
-        selected = Number($(this).attr("data-id"));
+        selectedWeed = Number($(this).attr("data-id"));
         smokesCalculator();
         
     });
@@ -260,13 +327,35 @@ $(document).ready(function(){ // begin document.ready block
 
     $('#portions-range').trigger('slidechange');
     
+    // CALCULATE EDIBLES
+    
+    // menu item
+    $(".edible-name").click(function(){
+        
+        selectedEdible = Number($(this).attr("data-id"));
+        ediblesCalculator();
+        
+    });
+    
+    // smokes slider
+    $('#smokes-range').change(function() {
+        
+        smokesCalculator();
+        
+    });
+
+    $('#portions-range').trigger('slidechange');
+    
+    
+    
+    
     
     //EDIBLES AUTO SUM (TRIGGERED BY SLIDERS)
 
     // amount slider
     $('#amount-range').change(function() {
         
-        var ediblesTHC = parseInt((amountSlider.value) * (strengthSlider.value/100) / (portionsSlider.value) * 1000); // convert to milligrams
+        var ediblesTHC = parseInt((amountSlider.value)*(edibles[selectedEdible].thcTotal));
     
         var ediblesTHCintake = parseInt(ediblesTHC * 0.6); // 60% efficiency for edibles
         

@@ -1,0 +1,57 @@
+[
+  {
+    "product": "Cookie",
+    "servingSize": 16,
+    "servingSizeUnits": "g",
+    "americanServing": "0.56 oz",
+    "thcTotal": "10",
+    "suggestedValue": 0.5,
+    "suggestedProductDosage": "1/2 cookie",
+    "suggestedDosage": "Start with a half of a serving (5mg)",
+    "linktoSource": "http://www.thegoodship.com/how-to-eat-enjoy-pot-edibles-the-goodship-guide-to-edible-cannabis/"
+  },
+  {
+    "product": "Green Tea",
+    "servingSize": 1.9,
+    "servingSizeUnits": "g",
+    "americanServing": "1 Tea Pouch",
+    "thcTotal": "40",
+    "suggestedValue": 6,
+    "suggestedProductDosage": "6 teaspoons",
+    "suggestedDosage": "Start with 1/4 cup max",
+    "linktoSource": "https://vccbrands.com/product/sencha-green-40mg-thc/"
+  },
+  {
+    "product": "Pretzels",
+    "servingSize": 5,
+    "servingSizeUnits": "g",
+    "americanServing": "1 Pretzel",
+    "thcTotal": "3.33 ",
+    "suggestedValue": 1.5,
+    "suggestedProductDosage": "1.5 pretzels",
+    "suggestedDosage": "3mg of THC per pretzel",
+    "linktoSource": "https://www.instagram.com/p/BeZCp3ilila/?taken-by=venicecookiecompany"
+  },
+  {
+    "product": "Pink Lemonade",
+    "servingSize": 470,
+    "servingSizeUnits": "ml",
+    "americanServing": "16 fl oz",
+    "thcTotal": "100",
+    "suggestedValue": 5,
+    "suggestedProductDosage": "5 teaspoons",
+    "suggestedDosage": "Start with 47ml",
+    "linktoSource": "http://www.gfarmalabs.com/G-Drinks-Lemonades.html"
+  },
+  {
+    "product": "Brownie",
+    "servingSize": 100,
+    "servingSizeUnits": "g",
+    "americanServing": "3.57 oz",
+    "thcTotal": "250",
+    "suggestedValue": "",
+    "suggestedProductDosage": "",
+    "suggestedDosage": "Start with a piece the size of a half-inch sugar cube",
+    "linktoSource": "https://vccbrands.com/4-20-bar/"
+  }
+]

@@ -5,25 +5,47 @@
 */
 
 
-* {
-    box-sizing: border-box;}
-
 *:focus {
     outline: none;
 }
 
 html {
+    width: 100%;
+    height: auto;
     margin-bottom: 100px;
+    background-color: #f4f4f4;
 }
 
 body {
-    margin: 4%;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1px 40px 0px 40px;
+}
+
+.byline {
+    padding-top: 15px;
+}
+
+.text-section, .graphics-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px 10%;
+    margin: 0px;
 }
 
 #hero-image {
     width: 100%;
     height: 400px;
-    background-color: #f6f6f6;
+    background-color: #ddd;
     margin: 30px auto;
 }
 
@@ -43,13 +65,15 @@ h5 {
     font-family: 'Benton Gothic Bold', Arial, serif;
 }
 
+/* Interactive 1: smokes */
+
 .input-container {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
 }
 
-#myInput {
+.myInput {
     background-image: url(../img/search.svg);
     position: relative;
     background-position: 12px 13px;
@@ -70,7 +94,7 @@ h5 {
     opacity: 1;
 }
 
-button#cancel{
+button.cancel{
     position: relative;
     width: 25%;
     height: 48px;
@@ -82,7 +106,7 @@ button#cancel{
     border: 1px solid #ddd;
 }
 
-#myUL {
+.myUL {
     position: relative;
     list-style-type: none;
     width: 100%;
@@ -92,26 +116,26 @@ button#cancel{
     display: none;
 }
 
-#myUL li p {
+.myUL li p {
     height: 48px;
     border: 1px solid #ddd;
     margin: -1px 0px 0px 0px; /* Prevent double borders */
     background-color: #f6f6f6;
     padding: 12px 12px 12px 15px;
     text-decoration: none;
-    font-family: 'Benton Gothic Regular', Arial, serif;
-    font-size: 15px;
     color: black;
     display: block;
+    font-family: 'Benton Gothic Regular', Arial, serif;
+    font-size: 15px;
+}
+
+.myUL li p:hover:not(.header) {
+  background-color: #eee;
 }
 
 .strain {
     float: right;
-    color: #ddd;
-}
-
-#myUL li p:hover:not(.header) {
-  background-color: #eee;
+    color: #666;
 }
 
 button#calculate{
@@ -125,12 +149,12 @@ button#calculate{
     font-size: 17px;
     background-color: #ddd;
     color: #888;
-/*    box-shadow: 1px 1px 5px #999;*/
 }
 
 /* SLIDER */
 
 .slidecontainer {
+    position: relative;
     width: 100%; /* Width of the outside container */
     display: flex;
     flex-direction: row;
@@ -140,6 +164,7 @@ button#calculate{
     font-family: 'Benton Gothic Regular', Arial, serif;
     font-size: 1em;
 }
+
 
 #weed-amount {
     width: 38px;
@@ -193,12 +218,9 @@ button#calculate{
 }
 
 
-
-
-
 /* WEED INFO */
 
-#weed-info {
+.weed-info {
     position: relative;
     width: 100%;
     height: 100%;
@@ -222,7 +244,7 @@ button#calculate{
     font-size: 18px;
     font-weight: 400;
     margin: 0px;
-    padding: 7px;
+    padding: 10px;
     background-color: #f4f4f4;
 }
 
@@ -236,7 +258,7 @@ button#calculate{
     font-size: 18px;
     font-weight: 400;
     margin: 0px;
-    padding: 7px;
+    padding: 10px;
     background-color: white;
 }
 
@@ -250,7 +272,7 @@ button#calculate{
     font-size: 18px;
     font-weight: 400;
     margin: 0px;
-    padding: 7px;
+    padding: 10px;
     background-color: #f4f4f4;
 }
 
@@ -585,7 +607,6 @@ button#calculate{
 .dosage-container {
     width: 100%;
     height: auto;
-    background-color: aqua;
     font-family: 'Benton Gothic Regular', Arial, serif;
 }
 
@@ -1039,13 +1060,6 @@ h6.effect-graph {
 
 /* THC GRAPH - EDIBLES */
 
-#edible-infographic-container {
-    position: relative;
-    margin: 35px auto;
-    width: 100%;
-    height: auto;
-    display: none;
-}
 
 #edibles-portions-sum {
     width: 100%;
@@ -1084,15 +1098,11 @@ h6.effect-graph {
 }
 
 .edibles-number {
-    width: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    width: 40px;
 }
 
 .edibles-value {
-    width: 44px;
+    width: 90px;
 }
 
 #edibles-intake-labels {
@@ -1246,4 +1256,163 @@ h6.effect-graph {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+
+
+
+#edible-infographic-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#edibles-slider {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#edibles-amount {
+    position: relative;
+    width: 34px;
+    height: 50px;
+    float: left;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#edibles-value-grams {
+    position: relative;
+    width: auto;
+    height: 50px;
+    padding-right: 20px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#input-container {
+    position: relative;
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#amount-range {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+
+.input-ticks-container {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.input-ticks {
+    width: 25%;
+    border-right: 1px solid #d3d3d3;
+    height: 10px;
+    margin-top: -1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.input-ticks:first-child {
+    border-left: 1px solid #d3d3d3;
+}
+
+.edibles-specs {
+    float: right;
+    color: #999;
+}
+
+#edibles-selection-container {
+    display: none;
+}
+
+.sub-headline {
+    margin-top: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+     
+    html {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        background-color: white;
+    }
+
+    body {
+        width: 100%;
+        margin: auto;
+        background-color: white;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 1px 10px 0px 10px;
+    }
+
+    .byline {
+        padding-top: 15px;
+    }
+
+    .text-section, .graphics-section {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 0px 16px;
+        margin: 0px;
+    }
+
+    
 }

@@ -1,0 +1,37 @@
+
+
+
+2)
+
+We are using 38% efficiency (the actual intake when consuming weed) for joints, 54% efficiency for vapes and 40% efficiency for bongs. We took the values from two studies: XXX and YYY.
+
+    var smokeIntake = parseInt(thcMaxAmount * 0.38); // 38% efficiency for joints
+    var vapeIntake = parseInt(thcMaxAmount * 0.54); // 54% efficiency for vapes
+    var bongIntake = parseInt(thcMaxAmount * 0.40); // 40% efficiency for bongs
+
+
+3) 
+
+We found the dosage information from here:
+
+perrywinklesedibles.com/dosage-information
+
+Maybe we need to find more official source?
+
+4)
+
+We found the sample graph / reference from here:
+
+thecannifornian.com/special-sections/safely-try-edibles-guide-beginners
+
+We found the same info from more official sources as well. Alejandra, could you paste the links here?
+
+5)
+
+Yes, we are converting the weed grams to milligrams, then multiplying the weed amount with the THC percentage, dividing the result with the amount of portions and finally multiplying the result with 0.6 (60% efficiency for edibles). Alejandra, could you provide a link that shows where did we get this number?
+
+    var ediblesTHC = parseInt((amountSlider.value) * (strengthSlider.value/100) / (portionsSlider.value) * 1000); // convert to milligrams
+
+    var ediblesTHCintake = parseInt(ediblesTHC * 0.6); // 60% efficiency for edibles
+
+
