@@ -14,9 +14,8 @@
   <body class="mobile-force-center">
       
 
-      
+    <!-- Header starts -->
     <header class="center mobile-force-center">
-    <!-- This version maintains it's center alignment -->
 <!--        {% include 'ngux-tophat/share-buttons.html' %}-->
         <h1>A simple guide to pot, THC and how much you ingest</h1>
         <p class="description">When you go to a dispensary, it is impossible to know how much THC is in a cannabis strain, unless you go to the edibles section -but even then, customers may not understand how much THC intake will actually ingest. Here is a useful guide to better understand the THC content of your weed.</p>
@@ -29,23 +28,23 @@
         </p>
     </header>
     
-        <div id="hero-image">
-            <img src="" />
-        </div>
-      
+    <!-- Hero Image slot starts -->
+    <div id="hero-image">
+        <img src="" />
+    </div>
+    
+    <!-- Body text section starts -->
     <section class="text-section">
         <p><span class="dropcap">I</span>t is impossible to know exactly how much THC is in a cannabis product and how it will affect someone. The way it’s consumed, the type of product and individual tolerance all play a part.</p>
         <p>Cannabis flower products aren’t usually tested in a lab so potency is estimated by dry weight. And many labs use different standards to measure compounds in edibles.</p>
         <p>The most critical factor is the amount of tetrahydrocannabinol (THC) and cannabidiol (CBD) contained in a product.</p>
-        
         <p>Surprisingly, cannabis contains very little of the components that “get people high.” It’s the addition of heat from burning, vaping or cooking that activates the THC and CBD. This is why you won't get high by eating raw cannabis flowers. “Eating raw cannabis flowers will only serve you as an anti-inflammatory,” said Jeffrey Raber, co-founder and president of The Werc Shop, a lab-testing facility based in Los Angeles.</p>
         <p>Heating triggers a chemical process known as decarboxylation. During that process, a large percentage of THC is lost.</p>
         <p>Smoking, whether using a joint, bong or a bowl, degrades more THC than any other method of consumption. It’s also associated with more negative health effects.</p>
-        <p>A vaporizer delivers more THC per gram of cannabis, according to a study conducted by Dr. Donald Abrams at University of California Center for Medicinal Cannabis. Vaping may be a healthier way to consume, compared to smoking, but vaping has not been heavily researched and some of its effects are unknown.</p>
-        
+        <p>A vaporizer delivers more THC per gram of cannabis, according to a study conducted by Dr. Donald Abrams at University of California Center for Medicinal Cannabis. Vaping may be a healthier way to consume, compared to smoking, but vaping has not been heavily researched and some of its effects are unknown.</p>   
     </section>
     
-      
+    <!-- First interactive section starts -->
     <section class="graphics-section">
 
         <!-- THC calculator -->
@@ -68,8 +67,10 @@
 
         <div class="infographic-container">
 
-            <h5 class="question">How much weed will you use?</h5>
-            <p>The average American joint contains 0.3 grams.</p>
+            <h5 class="sub-headline">How much weed will you use?</h5>
+            
+            <p class="side-note">The average American joint contains 0.3 grams.</p>
+            
 
             <div class="slidecontainer">
 
@@ -82,7 +83,6 @@
 
             <!-- THC infographic -->
             <h5 class="question">Estimated THC intake and loss</h5>
-            <p>Studies suggest that 63 percent of the THC content of a joint is lost due burning; 60 percent is lost in the process when using a bong and 46 percent when using a vaporizer.</p>
 
             <div id="intake-legend">
                 <div id="legend-orange"></div>
@@ -95,8 +95,8 @@
             <div id="intake-container">
                 <div id="intake-labels">
                     <div id="intake-smoke-label">Joint</div>
-                    <div id="intake-vape-label">Vaporizer</div>
                     <div id="intake-bong-label">Bong</div>
+                    <div id="intake-vape-label">Vaporizer</div>
                 </div>
 
                 <div id="intake-bars">
@@ -112,16 +112,16 @@
                         <div id="intake-smoke-orange"></div>
                     </div>
 
-                    <div id="intake-vape-gray">
-                        <div id="intake-vape-orange"></div>
-                    </div>
-
                     <div id="intake-bong-gray">
                         <div id="intake-bong-orange"></div>
                     </div>
-
+                    
+                    <div id="intake-vape-gray">
+                        <div id="intake-vape-orange"></div>
+                    </div>
                 </div>
             </div>
+            
             <div id="intake-scale-container">
                 <div id="intake-scale-numb1">mg</div>
                 <div id="intake-scale">
@@ -133,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="caption">The milligrams displayed are an approximation of the intake, taking account the lost of THC caused by combustion and other factors.</div>
+            <div class="caption">The milligrams displayed are an approximation of the intake, taking account the lost of THC caused by combustion and other factors. Studies suggest that 63 percent of the THC content of a joint is lost due burning; 60 percent is lost in the process when using a bong and 46 percent when using a vaporizer.</div>
 
             <!-- Dosage infographic -->
             <h5 class="question">Potential THC dosage</h5>
@@ -191,9 +191,9 @@
                     </div>
 
                     <div id="dosage-amount-smoke"><span>Joint</span></div>
-                    <div id="dosage-amount-vape"><span>Vaporizer</span></div>
                     <div id="dosage-amount-bong"><span>Bong</span></div>
-
+                    <div id="dosage-amount-vape"><span>Vaporizer</span></div>
+                    
                 </div>  
             </div>
             <div class="dosage-scale-container">
@@ -221,7 +221,7 @@
     <section class="text-section">
     
         <!-- Text -->
-        <h5 class="question sub-headline">Smoking vs. eating</h5>
+        <h5 class="question">Smoking vs. eating</h5>
 
         <p>There is a big difference between inhaling and eating cannabis because the THC in edibles is metabolized by the liver. It can take from 30 minutes to 2 hours to start feeling the effects, which will be stronger and last longer when compared to smoking or vaping.</p>
 
@@ -260,12 +260,15 @@
         
         <!-- Edible calculator -->
 
-        <h3 class="subheadline">Search for an edible product</h3>
+        <h3 class="subheadline">Search for edible product</h3>
+        <p>THC concentrations often vary in similar products from different manufacturers. This is a basic introduction to THC levels, not a definitive guide.</p>
 
         <p></p>
 
+<!--          max="1" step="0.1" value="1"-->
+        
         <div class="input-container">
-            <input type="text" id="myInput-edibles" class="myInput" onkeyup="searchbarFilter()" placeholder="Select a product" title="Type in a name">
+            <input type="text" id="myInput-edibles" class="myInput" min="0" onkeyup="searchbarFilter()" placeholder="Select a product" title="Type in a name">
 
             <button id="cancel2" class="cancel">Cancel</button>
 
@@ -279,7 +282,7 @@
 
                 <div id="edibles-info" class="weed-info"></div>
 
-                <h5 class="question" id="scrollTarget2">How much will you use?</h5>
+                <h5 class="question" id="scrollTarget2">Serving size</h5>
 
                 <div id="edibles-slider" class="slidecontainer">
 
@@ -289,7 +292,7 @@
 
                     <div id="input-container">
 
-                        <input type="range" min="0" max="1" step="0.1" value="" class="slider" id="amount-range" list="number" />
+                        <input type="range" class="slider" id="amount-range" list="number" />
 
                         <div class="input-ticks-container">
                             <div class="input-ticks"></div>
@@ -305,7 +308,6 @@
 
             <!-- Dosage infographic -->
             <h5 class="question">Potential THC dosage</h5>
-            <p>This is a basic introduction to THC and CBD levels, not a definitive guide to cannabis affects.</p>
 
             <div class="dosage-legend dosage-legend-edibles">
                 <div class="dosage-legend-lightblue"></div>
