@@ -705,10 +705,9 @@ button#calculate{
 .fade-mask {
     position: absolute;
     top: 0px;
-    right: -75px;
-    width: 74px;
+    right: -110px;
+    width: 120px;
     height: 400px;
-/*    background-color: aqua*/
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 
