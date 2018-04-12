@@ -1,7 +1,7 @@
 /* styles.css 
    Project: LA Times - Weed calculator (Stefani Urmas, Alejandra Ramos, Kristine De Leon)
    Author: Stefani Urmas, Alejandra Ramos
-   Date: 04/0/2018
+   Date: 04/11/2018
 */
 
 
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    width: 70%;
+    width: 65%;
     margin: auto;
     background-color: white;
 }
@@ -26,8 +26,20 @@ body {
     box-sizing: border-box;
 }
 
+.benton-semibold {
+    font-family: 'Benton Gothic SemiBold', Arial, serif;
+}
+
+.benton-bold {
+    font-family: 'Benton Gothic Bold', Arial, serif;
+}
+
 header {
     padding: 1px 40px 0px 40px;
+}
+
+h1 {
+    line-height: 1.2em;
 }
 
 .byline {
@@ -49,10 +61,13 @@ header {
     margin: 30px auto;
 }
 
+.dropcap {
+    line-height: 1em;
+}
+
 h3.subheadline {
     font-family: 'Belizio Narrow SemiBold', Georgia, serif;
     color: #FF5443;
-    padding-top: 15px;
 }
 
 h5 {
@@ -151,10 +166,11 @@ button#calculate{
     color: #888;
 }
 
-/* SLIDER */
+/* SMOKES SLIDER */
 
 .slidecontainer {
     position: relative;
+    display: block;
     width: 100%; /* Width of the outside container */
     display: flex;
     flex-direction: row;
@@ -163,19 +179,6 @@ button#calculate{
     height: 40px;
     font-family: 'Benton Gothic Regular', Arial, serif;
     font-size: 1em;
-}
-
-
-#weed-amount {
-    width: 38px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-#grams {
-    width: 20px;
 }
 
 /* The slider itself */
@@ -189,15 +192,12 @@ button#calculate{
     opacity: 1;
     -webkit-transition: .2s;
     transition: opacity .2s;
-    
 }
 
-/* Mouse-over effects */
 .slider:hover {
     opacity: 1; /* Fully shown on mouse-over */
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -217,8 +217,97 @@ button#calculate{
     cursor: pointer;
 }
 
+#smokes-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: block;
+}
 
-/* WEED INFO */
+#weed-amount {
+    position: relative;
+    width: 32px;
+    height: 50px;
+    float: left;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#grams {
+    position: relative;
+    width: auto;
+    height: 50px;
+    padding-right: 12px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#smokes-input-container {
+    position: relative;
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#smokes-range {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+
+.input-ticks-container {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.smokes-input-ticks {
+    width: 10%;
+    border-right: 1px solid #d3d3d3;
+    height: 10px;
+    margin-top: -1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.smokes-input-ticks:first-child {
+    border-left: 1px solid #d3d3d3;
+}
+/* end of smokes slider */
+
+
+/* WEED INFO BOX */
 
 .weed-info {
     position: relative;
@@ -280,10 +369,16 @@ button#calculate{
     float: right;
 }
 
+.thc-strength,
+.cbd-strength {
+    margin-left: 6px;
+}
+
 
 /* THC GRAPH - SMOKES */
 
 .infographic-container {
+    display: block;
     position: relative;
     margin: 35px auto;
     width: 100%;
@@ -357,7 +452,7 @@ button#calculate{
 
 #intake-labels {
     float: left;
-    width: 14%;
+    width: 10%;
     height: auto;
     background-color: white;
     color: white;
@@ -369,9 +464,9 @@ button#calculate{
     margin: 20px auto;
     color: black;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     font-family: 'Benton Gothic Bold', Arial, serif;
     font-size: 15px;
 }
@@ -405,7 +500,7 @@ button#calculate{
 #intake-bars {
     position: relative;
     float: left;
-    width: 86%;
+    width: 90%;
     height: auto;
     background-color: white;
     border-left: 1px solid #ddd;
@@ -423,14 +518,12 @@ button#calculate{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    
 }
 
 .intake-grid-cell {
     width: 20%;
     height: 100%;
     border-right: 1px solid #ddd;
-    
 }
 
 #intake-smoke-gray {
@@ -539,20 +632,7 @@ button#calculate{
     float: left;
 }
 
-/*
-.intake-scale-number {
-    width: 20%;
-    height: auto;
-    float: left;
-    margin-bottom: 40px;
-    font-size: 11px;
-    text-align: right;
-    margin-right: 0px;
-}
-*/
-
 /* DOSAGE GRAPH */
-
 
 .dosage-legend {
     position: relative;
@@ -598,6 +678,7 @@ button#calculate{
     background: #4591B8;
     margin: 0px 6px 0px 20px;;
 }
+
 .dosage-legend-orange {
     width: 13px;
     height: 13px;
@@ -613,7 +694,7 @@ button#calculate{
 
 .dosage-labels {
     float: left;
-    width: 25%;
+    width: 15%;
     height: auto;
     background-color: white;
     color: white;
@@ -628,7 +709,6 @@ button#calculate{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    font-weight: 700;
     font-family: 'Benton Gothic Bold', Arial, serif;
     font-size: 15px;
     line-height: 15px
@@ -643,7 +723,7 @@ button#calculate{
 .dosage-bars {
     position: relative;
     float: left;
-    width: 75%;
+    width: 85%;
     height: auto;
     border-left: 1px solid #ddd;
 }
@@ -941,7 +1021,6 @@ button#calculate{
 
 /* EFFECT GRAPH */
 
-
 h5.effect-graph {
     font-family: 'Benton Gothic Bold', Arial, serif;
     font-size: 1em;
@@ -983,6 +1062,12 @@ h6.effect-graph {
     height: 5px;
     text-align: right;
     font-size: 0.8em;
+}
+
+.ticks span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 #effect-graph-xlabel {
@@ -1150,14 +1235,12 @@ h6.effect-graph {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    
 }
 
 .edibles-intake-grid-cell {
     width: 20%;
     height: 100%;
     border-right: 1px solid #ddd;
-    
 }
 
 #edibles-intake-gray {
@@ -1188,7 +1271,6 @@ h6.effect-graph {
     justify-content: center;
     color: white;
 }
-
 
 #edibles-scale-container {
     position: relative;
@@ -1272,12 +1354,13 @@ h6.effect-graph {
     justify-content: flex-start;
 }
 
+
+/* slider for edibles */
 #edibles-slider {
     position: relative;
     display: none;
     width: 100%;
     height: auto;
-/*    margin-bottom: 50px;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
@@ -1296,14 +1379,13 @@ h6.effect-graph {
     flex-wrap: wrap; 
     align-items: center;
     justify-content: flex-start;
-
 }
 
 #edibles-value-grams {
     position: relative;
     width: auto;
     height: 50px;
-    padding-right: 20px;
+    padding-right: 12px;
     float: left;
     display: flex;
     flex-direction: row;
@@ -1361,14 +1443,11 @@ h6.effect-graph {
 .input-ticks:first-child {
     border-left: 1px solid #d3d3d3;
 }
+/* end of edibles slider */
 
 .edibles-specs {
     float: right;
     color: #999;
-}
-
-#edibles-selection-container {
-/*    display: none;*/
 }
 
 h5.sub-headline {
@@ -1382,7 +1461,7 @@ p.side-note {
     font-family: 'Benton Gothic Regular', Arial, serif;
     font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.75px;
     padding: 0px 0px 15px 0px;
     margin: 10px 0px 15px 0px;
 }
@@ -1390,8 +1469,31 @@ p.side-note {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 1024px) {
+    
+    body {
+        width: 75%;
+    }
+    
+    #intake-labels {
+        width: 14%;
+    }
+    
+    #intake-bars {
+        width: 86%;
+    }
+    
+    .dosage-labels {
+        width: 23%;
+    }
+    
+    .dosage-bars {
+        width: 77%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-     
+    
     html {
         width: 100%;
         height: auto;
@@ -1405,8 +1507,36 @@ p.side-note {
         background-color: white;
     }
 
-    * {
-        box-sizing: border-box;
+    #intake-labels {
+        width: 16%;
+    }
+    
+    #intake-bars {
+        width: 84%;
+    }
+    
+    .dosage-labels {
+        width: 23%;
+    }
+    
+    .dosage-bars {
+        width: 77%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    
+    html {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        background-color: white;
+    }
+
+    body {
+        width: 100%;
+        margin: auto;
+        background-color: white;
     }
 
     header {
@@ -1415,6 +1545,18 @@ p.side-note {
 
     .byline {
         padding-top: 15px;
+    }
+    
+    header.mobile-force-center.center h1 {
+    max-width: 95%;
+    }
+    
+    header.mobile-force-center.center p.description {
+    margin: 0px 10px;
+    }
+    
+    #hero-image {
+    margin-bottom: 0px;
     }
 
     .text-section, .graphics-section {
@@ -1425,4 +1567,53 @@ p.side-note {
         margin: 0px;
     }
     
+    p {
+        font-size: 18px;
+        line-height: 1.618em;
+        margin: 15px 0px;
+    }
+    
+    .dropcap {
+        font-size: 55px;
+        line-height: 1.17em;
+        margin-right: .1em;
+        margin-bottom: -0.20em;
+    }
+    
+    h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        width: 34px;
+        height: 34px;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 34px;
+        height: 34px;
+    }
+    
+    #intake-labels {
+        width: 19%;
+        letter-spacing: -0.4px;
+    }
+    
+    #intake-bars {
+        width: 81%;
+    }
+    
+    .dosage-labels {
+        width: 25%;
+        letter-spacing: -0.2px;
+    }
+    
+    .dosage-bars {
+        width: 75%;
+    }
+    
+    
 }
+
+
