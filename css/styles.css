@@ -628,7 +628,7 @@ button#calculate{
 }
 
 #intake-scale-numb1 {
-    width: 19%;
+    width: 10%;
     height: 30px;
     float: left;
     font-size: 11px;
@@ -636,7 +636,7 @@ button#calculate{
 }
 
 #intake-scale {
-    width: 81%;
+    width: 90%;
     height: auto;
     float: left;
 }
@@ -1537,6 +1537,14 @@ p.side-note {
     .dosage-bars {
         width: 77%;
     }
+    
+    #intake-scale-numb1 {
+        width: 16%;
+    }
+
+    #intake-scale {
+        width: 84%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -1628,6 +1636,14 @@ p.side-note {
     
     .dosage-bars {
         width: 75%;
+    }
+    
+    #intake-scale-numb1 {
+        width: 19%;
+    }
+
+    #intake-scale {
+        width: 81%;
     }
     
     
