@@ -389,7 +389,7 @@ button#calculate{
 .infographic-container {
     display: block;
     position: relative;
-    margin: 35px auto;
+    margin: 10px auto;
     width: 100%;
     height: auto;
 }
@@ -628,7 +628,7 @@ button#calculate{
 }
 
 #intake-scale-numb1 {
-    width: 14%;
+    width: 19%;
     height: 30px;
     float: left;
     font-size: 11px;
@@ -636,7 +636,7 @@ button#calculate{
 }
 
 #intake-scale {
-    width: 86%;
+    width: 81%;
     height: auto;
     float: left;
 }
@@ -1166,7 +1166,6 @@ h6.effect-graph {
 }
 
 /* THC GRAPH - EDIBLES */
-
 
 #edibles-portions-sum {
     width: 100%;
