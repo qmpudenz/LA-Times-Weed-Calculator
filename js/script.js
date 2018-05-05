@@ -10,7 +10,7 @@ var selectedWeed
 var selectedEdible
 var ediblesTHC
 
-// SMOKES (interactive 1): SEARCH BAR FUNCTION
+// SMOKES (interactive 1): SEARCH BAR FUNCTION, filtering the list when typing
 
 function searchbarFilter() {
     var input, filter, ul, li, a, i;
@@ -200,11 +200,12 @@ function ediblesCalculator() {
     
     $("#calculate2").css({"background-color":"#FF5443","color":"white","cursor":"pointer"});
 
+    // creating an info table for edibles
     $("#edibles-info").html('</div><div class="weed-info-strain">Weight per '+ edibles[selectedEdible].productSpecific +'<span>'+ edibles[selectedEdible].americanServing +'</span></div><div class="weed-info-thc">THC<span>'+ edibles[selectedEdible].thcTotal +' mg</span></div><div class="weed-info-cbd"><a href="'+ edibles[selectedEdible].linktoSource +'">Read more about the product</a></div>') 
     
     $("#dosage-amount-edibles").html('<span>'+ edibles[selectedEdible].product +'</span>');
     
-    // checking if the unit should be in prular form
+    // checking if the unit should be in plural form
     if (amountSlider.value > 1) {
         $("#edibles-value-grams").html('<span>'+ edibles[selectedEdible].unit +'s</span>');
     } else {
@@ -222,11 +223,11 @@ function ediblesCalculator() {
 
 $(document).ready(function(){ 
     
-    // PRE-SELECTED SMOKES
+    // PRE-SELECTED SMOKES: selects the Blue Dream product, shows the info box, slider and graphs when the document is ready
     selectedWeed = 28; // Blue Dream
     smokesCalculator();
     
-    // PRE-SELECTED EDIBLES
+    // PRE-SELECTED EDIBLES: selects the Cookie product, shows the info box, slider and graphs when the document is ready
     selectedEdible = 0; // Cookie
 
     $("#edibles-amount").html('<span>'+ edibles[selectedEdible].suggestedValue +'</span>');
@@ -240,7 +241,7 @@ $(document).ready(function(){
     
     ediblesCalculator();
     
-    // SMOOTH AUTO SCROLL
+    // SMOOTH AUTO SCROLL: takes the user to the charts after clicking a weed/edible name
      
     // for smokes, interactive 1
 	$(".weed-name").on({
@@ -261,21 +262,21 @@ $(document).ready(function(){
     });
     
      
-    // SEARCH SMOKES
+    // SEARCH SMOKES: reveals the dropdown menu
     
     $("#myInput").click(function(){
         $("#myUL").css({"display":"block"});
         button1On();
     });
     
-    // SEARCH EDIBLES
+    // SEARCH EDIBLES: reveals the dropdown menu
     
     $("#myInput-edibles").click(function(){
         $("#myUL-edibles").css({"display":"block"});
         button2On();
     });
     
-    // CANCEL BUTTON, SMOKES
+    // CANCEL BUTTON, SMOKES: hides the dropdown menu and clears the input field
     
     $("#cancel1").click(function(){
         $("#myUL").css({"display":"none"});
@@ -283,7 +284,7 @@ $(document).ready(function(){
         button1Off();
     });
     
-    // CANCEL BUTTON, EDIBLES
+    // CANCEL BUTTON, EDIBLES: hides the dropdown menu and clears the input field
     
     $("#cancel2").click(function(){
         $("#myUL-edibles").css({"display":"none"});
@@ -291,7 +292,7 @@ $(document).ready(function(){
         button2Off();
     });
     
-    // CALCULATE SMOKES
+    // CALCULATE SMOKES: triggers the smokesCalculator function
     
     // menu item
     $(".weed-name").click(function(){

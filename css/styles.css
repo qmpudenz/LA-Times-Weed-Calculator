@@ -5,6 +5,10 @@
 */
 
 
+* {
+    box-sizing: border-box;
+}
+
 *:focus {
     outline: none;
 }
@@ -20,10 +24,6 @@ body {
     width: 65%;
     margin: auto;
     background-color: white;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .benton-semibold {
@@ -1038,9 +1038,7 @@ button#calculate{
 }
 
 
-
-
-/* EFFECT GRAPH */
+/* DOSAGE EFFECT GRAPH */
 
 h5.effect-graph {
     font-family: 'Benton Gothic Bold', Arial, serif;
@@ -1165,6 +1163,7 @@ h6.effect-graph {
     color: #999;
 }
 
+
 /* THC GRAPH - EDIBLES */
 
 #edibles-portions-sum {
@@ -1232,7 +1231,6 @@ h6.effect-graph {
     font-family: 'Benton Gothic Bold', Arial, serif;
     font-size: 15px;
 }
-
 
 #edibles-intake-bars {
     position: relative;
@@ -1645,7 +1643,6 @@ p.side-note {
     #intake-scale {
         width: 81%;
     }
-    
     
 }
 
