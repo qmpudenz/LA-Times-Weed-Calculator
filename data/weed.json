@@ -2,7 +2,7 @@
 var weed = [
   {
     "name": "9 Pound Hammer",
-    "strain": "Hybrid",
+    "strain": "Híbrido",
     "thc": "18.73",
     "cbd": "0.17"
   },
@@ -170,7 +170,7 @@ var weed = [
   },
   {
     "name": "Blue Dream",
-    "strain": "Hybrid",
+    "strain": "Híbrido",
     "thc": "10.76",
     "cbd": "0.01"
   },

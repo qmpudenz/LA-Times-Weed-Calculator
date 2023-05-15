@@ -94,26 +94,26 @@ function smokesCalculator() {
     $("#calculate").css({"background-color":"#FF5443","color":"white","cursor":"pointer"});
 
     // creating the weed info table
-    $("#weed-info").html('</div><div class="weed-info-strain">Strain<span>'+ weed[selectedWeed].strain +'</span></div><div class="weed-info-thc">THC<span>'+ parseInt(weed[selectedWeed].thc) +' % <span class="thc-strength"></span></span></div><div class="weed-info-cbd">CBD <span class="cbd-strength"></span><span>'+ weed[selectedWeed].cbd +' %</span></div>')
+    $("#weed-info").html('</div><div class="weed-info-strain">Cepa<span>'+ weed[selectedWeed].strain +'</span></div><div class="weed-info-thc">THC<span>'+ parseInt(weed[selectedWeed].thc) +' % <span class="thc-strength"></span></span></div><div class="weed-info-cbd">CBD <span class="cbd-strength"></span><span>'+ weed[selectedWeed].cbd +' %</span></div>')
     
     // checking how strong is the THC content
     if (weed[selectedWeed].thc < 10 ) {
-        $("#weed-info span.thc-strength").html('(low)')
+        $("#weed-info span.thc-strength").html('(bajo)')
     } else if (weed[selectedWeed].thc > 10 && weed[selectedWeed].thc < 15 ) {
-        $("#weed-info span.thc-strength").html('(medium)')
+        $("#weed-info span.thc-strength").html('(medio)')
     } else if (weed[selectedWeed].thc > 15 && weed[selectedWeed].thc < 20 ) {
-        $("#weed-info span.thc-strength").html('(high)')
+        $("#weed-info span.thc-strength").html('(alto)')
     } else if (weed[selectedWeed].thc > 20 ) {
-        $("#weed-info span.thc-strength").html('(very high)')
+        $("#weed-info span.thc-strength").html('(muy alto)')
     }
     
     // checking how strong is the CBD content
     if (weed[selectedWeed].cbd < 1 ) {
-        $("#weed-info span.cbd-strength").html('(low)')
+        $("#weed-info span.cbd-strength").html('(bajo)')
     } else if (weed[selectedWeed].cbd > 1 && weed[selectedWeed].thc < 5 ) {
-        $("#weed-info span.cbd-strength").html('(medium)')
+        $("#weed-info span.cbd-strength").html('(medio)')
     } else if (weed[selectedWeed].cbd > 5 ) {
-        $("#weed-info span.cbd-strength").html('(high)')
+        $("#weed-info span.cbd-strength").html('(alto)')
     }
     
     var weedAmount = slider.value * 1000; // convert to milligrams
@@ -157,7 +157,7 @@ function smokesCalculator() {
     $("#intake-bong-orange").html(bongIntake + ' mg');
     $("#intake-vape-orange").html(vapeIntake + ' mg');
     
-    $("#legend-max").html('THC max: '+ thcMaxAmount +' mg');
+    $("#legend-max").html('THC máx: '+ thcMaxAmount +' mg');
     
     // dosage amounts
     $("#dosage-amount-smoke").animate({"width": smokeIntake + '%'},800);
@@ -201,7 +201,7 @@ function ediblesCalculator() {
     $("#calculate2").css({"background-color":"#FF5443","color":"white","cursor":"pointer"});
 
     // creating an info table for edibles
-    $("#edibles-info").html('</div><div class="weed-info-strain">Weight per '+ edibles[selectedEdible].productSpecific +'<span>'+ edibles[selectedEdible].americanServing +'</span></div><div class="weed-info-thc">THC<span>'+ edibles[selectedEdible].thcTotal +' mg</span></div><div class="weed-info-cbd"><a href="'+ edibles[selectedEdible].linktoSource +'">Read more about the product</a></div>') 
+    $("#edibles-info").html('</div><div class="weed-info-strain">Peso por '+ edibles[selectedEdible].productSpecific +'<span>'+ edibles[selectedEdible].americanServing +'</span></div><div class="weed-info-thc">THC<span>'+ edibles[selectedEdible].thcTotal +' mg</span></div><div class="weed-info-cbd"><a href="'+ edibles[selectedEdible].linktoSource +'">Leer más sobre el producto</a></div>') 
     
     $("#dosage-amount-edibles").html('<span>'+ edibles[selectedEdible].product +'</span>');
     

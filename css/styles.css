@@ -461,7 +461,7 @@ button#calculate{
 
 #intake-labels {
     float: left;
-    width: 10%;
+    width: 15%;
     height: auto;
     background-color: white;
     color: white;
@@ -509,7 +509,7 @@ button#calculate{
 #intake-bars {
     position: relative;
     float: left;
-    width: 90%;
+    width: 85%;
     height: auto;
     background-color: white;
     border-left: 1px solid #ddd;
@@ -628,7 +628,7 @@ button#calculate{
 }
 
 #intake-scale-numb1 {
-    width: 10%;
+    width: 15%;
     height: 30px;
     float: left;
     font-size: 11px;
@@ -636,7 +636,7 @@ button#calculate{
 }
 
 #intake-scale {
-    width: 90%;
+    width: 85%;
     height: auto;
     float: left;
 }
@@ -713,7 +713,7 @@ button#calculate{
 
 .dosage-labels {
     float: left;
-    width: 15%;
+    width: 20%;
     height: auto;
     background-color: white;
     color: white;
@@ -742,7 +742,7 @@ button#calculate{
 .dosage-bars {
     position: relative;
     float: left;
-    width: 85%;
+    width: 80%;
     height: auto;
     border-left: 1px solid #ddd;
 }
@@ -1014,7 +1014,7 @@ button#calculate{
 }
 
 .dosage-scale-numb1 {
-    width: 25%;
+    width: 20%;
     height: 30px;
     float: left;
     font-size: 11px;
@@ -1022,7 +1022,7 @@ button#calculate{
 }
 
 .dosage-scale {
-    width: 75%;
+    width: 80%;
     height: auto;
     float: left;
 }

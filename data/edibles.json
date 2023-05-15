@@ -1,18 +1,18 @@
 var edibles = [
   {
-    "product": "Cookie",
-    "productSpecific": "1 cookie",
+    "product": "Galleta",
+    "productSpecific": "1 galleta",
     "servingSize": 16,
     "servingSizeUnits": "g",
-    "americanServing": "0.56 oz (16 g)",
+    "americanServing": "16 g (0.56 oz)",
     "thcTotal": "10",
-    "unit": "cookie",
+    "unit": "galleta",
     "maxValue": 5,
     "step": 0.5,
     "suggestedValue": 0.5,
-    "suggestedValueUnit": "cookie",
-    "suggestedStartDosage": "1/2 cookie",
-    "suggestedDosage": "Start with a half of a cookie",
+    "suggestedValueUnit": "galleta(s)",
+    "suggestedStartDosage": "1/2 galleta",
+    "suggestedDosage": "Comience con la mitad de una galleta",
     "linktoSource": "http://www.thegoodship.com/how-to-eat-enjoy-pot-edibles-the-goodship-guide-to-edible-cannabis/"
   },
   {
